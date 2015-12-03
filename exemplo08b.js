@@ -1,0 +1,22 @@
+var p1 = {
+	nome: "Fulano",
+	idade: 23
+};
+var p2 = {
+	nome: "Beltrano",
+	idade: 12
+};
+function imprime(){
+		console.log(this.nome," ",this.idade);
+}
+p1.imprime = imprime;
+p2.imprime = imprime;
+
+console.log(p1);
+console.log(typeof p1);
+console.log(p2);
+console.log(typeof p2);
+
+p1.imprime();
+p2.imprime();
+
